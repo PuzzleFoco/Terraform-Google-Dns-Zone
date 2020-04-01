@@ -13,6 +13,8 @@ crash.log
 # version control.
 #
 # example.tfvars
+testproject-ef39e40d4d53.json
+creds.tfvars
 
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
