@@ -13,6 +13,11 @@ variable "description" {
   type        = string
 }
 
+variable "public_ip_name" {
+  description = "Name of the Public IP Resource"
+  type        = string
+}
+
 variable "project" {
   description = "The Project ID"
   type        = string

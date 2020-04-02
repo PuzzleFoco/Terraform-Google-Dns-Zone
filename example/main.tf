@@ -7,8 +7,9 @@ provider "google" {
 module "dns_zone" {
     source  = "../../terraform_google_dns_zone"
 
-    name        = "google-example-dns-zone"
-    dns_name    = "masterthesisexample.com."
-    description = "Example DNS Zone"
-    project     = var.project_id
+    name            = "google-example-dns-zone"
+    dns_name        = "masterthesisexample.com."
+    description     = "Example DNS Zone"
+    project         = var.project_id
+    public_ip_name  = "mypublicipaddress"
 }
