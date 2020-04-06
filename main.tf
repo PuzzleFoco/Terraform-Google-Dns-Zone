@@ -4,6 +4,10 @@ resource "google_dns_managed_zone" "example_dns_zone" {
     dns_name    = var.dns_name
     description = var.description
     project     = var.project
+
+    lifecycle {
+      prevent_destroy = true
+    }
 }
 
 resource "google_compute_address" "public_ip" {
