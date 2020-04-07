@@ -22,3 +22,8 @@ variable "project" {
   description = "The Project ID"
   type        = string
 }
+
+variable "location" {
+  description = "The Google Cloud Region for the IP-Address (Should be the same as the Kubernetes Cluster)"
+  type        = string
+}

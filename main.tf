@@ -13,7 +13,7 @@ resource "google_dns_managed_zone" "example_dns_zone" {
 resource "google_compute_address" "public_ip" {
     name    = var.public_ip_name
     project = var.project
-    region  = "europe-west4"
+    region  = var.location
 }
 
 resource "google_dns_record_set" "wildcard_subdomain" {
