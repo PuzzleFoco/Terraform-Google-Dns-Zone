@@ -27,3 +27,9 @@ variable "location" {
   description = "The Google Cloud Region for the IP-Address (Should be the same as the Kubernetes Cluster)"
   type        = string
 }
+
+variable "nameserverlist" {
+  description = "List for Google Nameservers to make them static"
+  type        = list
+  default     = ["ns-cloud-a1.googledomains.com.","ns-cloud-a2.googledomains.com.","ns-cloud-a3.googledomains.com.","ns-cloud-a4.googledomains.com.",]
+}
