@@ -22,14 +22,3 @@ resource "google_dns_record_set" "wildcard_subdomain" {
 
     rrdatas = [google_compute_address.public_ip.address]
 }
-
-resource "google_dns_record_set" "nameserver" {
-    name    = google_dns_managed_zone.example_dns_zone.dns_name
-    type    = "NS"
-    ttl     = 21600
-    project = var.project
-
-    managed_zone = google_dns_managed_zone.example_dns_zone.name
-
-    rrdatas = var.nameserverlist
-}
